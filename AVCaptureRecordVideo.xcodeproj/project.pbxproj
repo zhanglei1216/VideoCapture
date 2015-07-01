@@ -14,6 +14,10 @@
 		8BBF76881B424871002C1A16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BBF76871B424871002C1A16 /* Images.xcassets */; };
 		8BBF768B1B424871002C1A16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BBF76891B424871002C1A16 /* LaunchScreen.xib */; };
 		8BBF76971B424871002C1A16 /* AVCaptureRecordVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF76961B424871002C1A16 /* AVCaptureRecordVideoTests.m */; };
+		8BBF76A21B4248A3002C1A16 /* CameraHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF76A11B4248A3002C1A16 /* CameraHelp.m */; };
+		8BBF76A41B4248BD002C1A16 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBF76A31B4248BD002C1A16 /* AVFoundation.framework */; };
+		8BBF76A71B4272B3002C1A16 /* VideoCapture .m in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF76A61B4272B3002C1A16 /* VideoCapture .m */; };
+		8BBF76AB1B42B762002C1A16 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BBF76AA1B42B762002C1A16 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		8BBF76901B424871002C1A16 /* AVCaptureRecordVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AVCaptureRecordVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BBF76951B424871002C1A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BBF76961B424871002C1A16 /* AVCaptureRecordVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVCaptureRecordVideoTests.m; sourceTree = "<group>"; };
+		8BBF76A01B4248A3002C1A16 /* CameraHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraHelp.h; sourceTree = "<group>"; };
+		8BBF76A11B4248A3002C1A16 /* CameraHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraHelp.m; sourceTree = "<group>"; };
+		8BBF76A31B4248BD002C1A16 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8BBF76A51B4272B3002C1A16 /* VideoCapture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCapture.h; sourceTree = "<group>"; };
+		8BBF76A61B4272B3002C1A16 /* VideoCapture .m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VideoCapture .m"; sourceTree = "<group>"; };
+		8BBF76AA1B42B762002C1A16 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF76AB1B42B762002C1A16 /* MediaPlayer.framework in Frameworks */,
+				8BBF76A41B4248BD002C1A16 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,8 @@
 		8BBF766E1B424871002C1A16 = {
 			isa = PBXGroup;
 			children = (
+				8BBF76AA1B42B762002C1A16 /* MediaPlayer.framework */,
+				8BBF76A31B4248BD002C1A16 /* AVFoundation.framework */,
 				8BBF76791B424871002C1A16 /* AVCaptureRecordVideo */,
 				8BBF76931B424871002C1A16 /* AVCaptureRecordVideoTests */,
 				8BBF76781B424871002C1A16 /* Products */,
@@ -89,6 +103,10 @@
 				8BBF76871B424871002C1A16 /* Images.xcassets */,
 				8BBF76891B424871002C1A16 /* LaunchScreen.xib */,
 				8BBF767A1B424871002C1A16 /* Supporting Files */,
+				8BBF76A01B4248A3002C1A16 /* CameraHelp.h */,
+				8BBF76A11B4248A3002C1A16 /* CameraHelp.m */,
+				8BBF76A51B4272B3002C1A16 /* VideoCapture.h */,
+				8BBF76A61B4272B3002C1A16 /* VideoCapture .m */,
 			);
 			path = AVCaptureRecordVideo;
 			sourceTree = "<group>";
@@ -220,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BBF76831B424871002C1A16 /* ViewController.m in Sources */,
+				8BBF76A71B4272B3002C1A16 /* VideoCapture .m in Sources */,
+				8BBF76A21B4248A3002C1A16 /* CameraHelp.m in Sources */,
 				8BBF76801B424871002C1A16 /* AppDelegate.m in Sources */,
 				8BBF767D1B424871002C1A16 /* main.m in Sources */,
 			);
@@ -416,6 +436,7 @@
 				8BBF769C1B424871002C1A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BBF769D1B424871002C1A16 /* Build configuration list for PBXNativeTarget "AVCaptureRecordVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +445,7 @@
 				8BBF769F1B424871002C1A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
